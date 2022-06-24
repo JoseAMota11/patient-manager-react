@@ -1,0 +1,76 @@
+.form__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15%;
+}
+
+.form__container input, textarea {
+  border: none;
+  border-radius: 0.2rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 0 2.2rem rgba(0, 0, 0, 0.25);
+}
+
+.form__container label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fefefe;
+}
+
+.form__container input {
+  height: 2.8rem;
+  text-indent: .4rem;
+  padding-right: .4rem;
+}
+
+.form__container textarea {
+  height: 6rem;
+  padding: 0.4rem;
+  resize: none;
+}
+
+.btn {
+  align-self: center;
+  width: 100%;
+  height: 2.8rem;
+  border: none;
+  border-radius: 0.2rem;
+  background-color: #00b4d8;
+  color: #fefefe;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  box-shadow: 0 0 2.2rem rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fefefe;
+  color: #00b4d8;
+}
+
+.error {
+  width: max-content;
+  padding: 1rem 0.8rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 2.2rem rgba(0, 0, 0, 0.25);
+  color: #c22;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  animation-name: error;
+  animation-duration: .4s;
+  animation-timing-function: ease;
+}
+
+@keyframes error {
+  0%   {bottom: 0;}
+  25%  {bottom: 1.5rem;}
+  50% {bottom: .5rem;}
+  75% {bottom: 1.25rem;}
+  100% {bottom: 1rem;}
+}
