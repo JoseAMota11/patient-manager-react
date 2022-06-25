@@ -45,7 +45,7 @@ function App() {
               />
             ))
             :
-            <h3 className='message'>There's not any appointments so far</h3>
+            <h3 className='message'>There's not any appointments so far.</h3>
             }
           </section>
         </article>

@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid'
 import '../css/Form.css'
+import PropTypes from 'prop-types'
 
 function Form({ createDate }) {
 
@@ -110,6 +111,10 @@ function Form({ createDate }) {
 
     </>
   )
+}
+
+Form.propTypes = {
+  createDate: PropTypes.func.isRequired
 }
 
 export default Form
